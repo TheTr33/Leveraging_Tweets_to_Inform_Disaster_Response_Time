@@ -42,6 +42,11 @@ The HERE Geocoder API is a REST (Representational state transfer) API that allow
 ##### Mapping
 Finally, in the mapping section we took the coordinates generated via the HERE Geocoder API, ran them through Shapely and into a GeoDataFrame for mapping with Folium. The final output is a map of Florida with the tweet locations we generated through SpaCy processing. <br>
 
+**Historic Tweet Map**<br>
+<img src ="./images/historic_tweet_map.png"/><br>
+
+**Randomly Generated Coordinates Map**<br>
+<img src="./images/random_tweet_map.png"/><br>
 
 ## Conclusions and Limitations  
 As mentioned above, the classification model used for distinguished traffic/emergency incident tweets was based on a naive assumption that tweets from the 511 accounts would be the positive class and tweets from non-specific accounts would be the negative class. While the assumption allows us to distinguish the tweets accurately in the testing dataset, the model will more realistically distinguish tweets by the 511 accounts from tweets not tweeted by the 511 accounts when applied to a corpus of live tweets. In order for the model to be able to classify between an emergency/ traffic tweet from a normal tweet more contextually, a more robustly classified training model from more accounts other than the 511 accounts would help. <br>
